@@ -1,0 +1,32 @@
+<svg id="LOGO" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: red;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: red;
+      }
+
+      .cls-1 {
+        stroke-width: 8.68px;
+      }
+
+      .cls-2 {
+        font-size: 66.667px;
+        fill: #fff;
+        font-family: Progress;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke-width: 1.69px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="-18.953" cy="-389" r="78.953"/>
+  <text id="FANEDESIGN" class="cls-2" x="-509.853" y="-152.701">FANEDESIGN</text>
+  <circle class="cls-3" cx="7" cy="15" r="5"/>
+  <circle class="cls-4" cx="22.016" cy="15" r="8.891"/>
+</svg>

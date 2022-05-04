@@ -1,0 +1,103 @@
+<div class="container-fluid p-0 m-0  position-fixed" style="z-index: 1000;background-color: rgba(42,46,59,0.7) !important;backdrop-filter: blur(5px)">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-between align-items-center" style="height: 60px">
+            <div class="">
+              <button class="rounded-pill border-0 text-white" mat-stroked-button>
+                <img src="assets/icons/logo.png" style="width: 120px;height: auto" alt="">
+              </button>
+            </div>
+            <div class="mobile">
+              <button class="main-btn text-white border-0" [matMenuTriggerFor]="mobileMenu"  mat-stroked-button><mat-icon>menu</mat-icon></button>
+              <mat-menu class="ressources" #mobileMenu="matMenu" yPosition="below">
+                        <a class="main-btn text-white border-0" mat-menu-item routerLink="/">Home</a>
+                        <button class="main-btn text-white border-0" mat-menu-item [matMenuTriggerFor]="produits">Products</button>
+                        <mat-menu class="produits" #produits="matMenu" yPosition="below">
+                          <button mat-menu-item routerLink="/products/angular" class="text-white main-btn">
+                            <img src="assets/icons/angular.png" style="width: 25px;margin-right:10px;height: auto" alt="">Angular JS
+                          </button>
+                          <button mat-menu-item routerLink="/products/reactjs" class="text-white main-btn">
+                            <img src="assets/icons/reactjs.png" style="width: 25px;margin-right:10px;height: auto" alt="">React Js
+                          </button>
+                          <button mat-menu-item routerLink="/products/html-css-bootstrap" class="text-white main-btn">
+                            <img src="assets/icons/html_css_bootstrap.png" style="width: 25px;margin-right:10px;height: auto" alt="">HTML & CSS & Bootstrap
+                          </button>
+                          <button mat-menu-item routerLink="/products/symphony" class="text-white main-btn">
+                            <img src="assets/icons/symphony.png" style="width: 25px;margin-right:10px;height: auto" alt="">Symphony
+                          </button>
+                          <button mat-menu-item routerLink="/products/laravel" class="text-white main-btn">
+                            <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Laravel PHP
+                          </button>
+
+                          <button mat-menu-item routerLink="/products/photoshop" class="text-white main-btn">
+                            <img src="assets/icons/photoshop.png" style="width: 25px;margin-right:10px;height: auto" alt="">Photoshop
+                          </button>
+                          <button mat-menu-item routerLink="/products/illustrator" class="text-white main-btn">
+                            <img src="assets/icons/illustrator.png" style="width: 25px;margin-right:10px;height: auto" alt="">Illustrator
+                          </button>
+                          <button mat-menu-item routerLink="/products/premiere-pro" class="text-white main-btn">
+                            <img src="assets/icons/premiere_pro.png" style="width: 25px;margin-right:10px;height: auto" alt="">Premiere Pro
+                          </button>
+                          <button mat-menu-item routerLink="/products/after-effect" class="text-white main-btn">
+                            <img src="assets/icons/after_effect.png" style="width: 25px;margin-right:10px;height: auto" alt="">After Effect
+                          </button>
+
+                        </mat-menu>
+                        <button class="main-btn text-white border-0" mat-menu-item [matMenuTriggerFor]="ressources">Ressources</button>
+                        <mat-menu class="ressources" #ressources="matMenu" yPosition="below">
+                          <button mat-menu-item class="text-white main-btn">
+                            <img src="assets/icons/abonnement-tv.png" style="width: 30px;height: auto" alt="">Blog
+                          </button>
+                          <button mat-menu-item class="text-white main-btn">
+                            <img src="assets/icons/infos.png" style="width: 30px;height: auto" alt="">Learing
+                          </button>
+                        </mat-menu>
+                        <a class="main-btn text-white border-0" mat-menu-item routerLink="/">Pricing</a>
+                        <button class="main-btn text-white border-0" color="primary" style="background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-menu-item>Sign up</button>
+              </mat-menu>
+            </div>
+            <div class="desktop">
+                <a class="mx-3 rounded-4 main-btn text-white border-0" mat-stroked-button routerLink="/">Home</a>
+                <button class="rounded-4 main-btn text-white border-0" mat-stroked-button [matMenuTriggerFor]="produits">Products <mat-icon>expand_more</mat-icon></button>
+                <!--<mat-menu class="produits" #produits="matMenu" yPosition="below">
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/angular.png" style="width: 25px;margin-right:10px;height: auto" alt="">Angular JS
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/reactjs.png" style="width: 25px;margin-right:10px;height: auto" alt="">React Js
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/html_css_bootstrap.png" style="width: 25px;margin-right:10px;height: auto" alt="">HTML & CSS & Bootstrap
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/symphony.png" style="width: 25px;margin-right:10px;height: auto" alt="">Symphony
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Laravel PHP
+                  </button>
+
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Photoshop
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Illustrator
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Premiere Pro
+                  </button>
+
+                </mat-menu>-->
+                <button class="rounded-4 main-btn text-white border-0" mat-stroked-button [matMenuTriggerFor]="ressources">Ressources <mat-icon>expand_more</mat-icon></button>
+                <!--<mat-menu class="ressources" #ressources="matMenu" yPosition="below">
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/abonnement-tv.png" style="width: 30px;height: auto" alt="">Blog
+                  </button>
+                  <button mat-menu-item class="text-white main-btn">
+                    <img src="assets/icons/infos.png" style="width: 30px;height: auto" alt="">Learing
+                  </button>
+                </mat-menu>-->
+                <a class="mx-3 rounded-4 main-btn text-white border-0" mat-stroked-button routerLink="/">Pricing</a>
+                <button class="rounded-4 main-btn text-white border-0" color="primary" style="margin-left: 20px;background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-stroked-button>Sign up</button>
+            </div>
+        </div>
+    </div>
+</div>

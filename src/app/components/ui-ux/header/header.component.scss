@@ -1,0 +1,48 @@
+::ng-deep{
+    .mat-menu-panel{
+      margin-top: 11px;
+      background-color: rgba(75, 82, 106, 0.4) !important;
+      backdrop-filter: blur(4px);
+      color: white !important;
+      width: 40vh !important;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25) !important;
+    }
+
+}
+
+.shadow-design {
+  box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-header{
+  background-color: rgba(42, 46, 59, 0.87) !important;
+}
+.rounded-4{
+    border-radius: 10px !important;
+}
+div,h1,h2,h4,h3,h5,h6,button,a{
+  font-family: Poppins, sans-serif !important;
+}
+.main-btn{
+  transition: all .2s ease-in-out !important;
+}
+.main-btn:hover{
+  background-color: rgba(255,255,255,0.10) !important;
+  transition: all .2s ease-in-out !important;
+}
+
+.desktop{
+  display: flex !important;
+}
+.mobile{
+  display: none !important;
+}
+
+@media screen and (max-width: 790px){
+  .desktop{
+    display: none !important;
+  }
+  .mobile{
+    display: flex !important;
+  }
+}

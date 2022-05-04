@@ -1,0 +1,15 @@
+.desktop{
+  display: flex !important;
+}
+.mobile{
+  display: none !important;
+}
+
+@media screen and (max-width: 790px){
+  .desktop{
+    display: none !important;
+  }
+  .mobile{
+    display: flex !important;
+  }
+}

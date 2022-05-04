@@ -1,0 +1,13 @@
+.rounded-4{
+  border-radius: 10px !important;
+}
+div,h1,h2,h4,h3,h5,h6,button,a{
+  font-family: Poppins, sans-serif !important;
+}
+.main-btn{
+  transition: all .2s ease-in-out !important;
+}
+.main-btn:hover{
+  background-color: rgba(255,255,255,0.10) !important;
+  transition: all .2s ease-in-out !important;
+}

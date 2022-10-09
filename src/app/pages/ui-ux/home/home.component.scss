@@ -55,12 +55,13 @@ div,h1,h2,h4,h3,h5,h6,button,a{
 }
 .items-choose{
   background-color: rgba(75, 82, 106, 0.4) !important;
-  border-radius: 20px !important;
+  border-radius: 25px !important;
   transition: all .3s ease-in-out;
 }
 .items-choose:hover{
   transform: translateY(5px) !important;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 5px !important;
   transition: all .3s ease-in-out;
 }
 

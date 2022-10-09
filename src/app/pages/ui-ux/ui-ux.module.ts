@@ -8,6 +8,8 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatMenuModule} from "@angular/material/menu";
 import {FooterComponent} from "../../components/ui-ux/footer/footer.component";
+import {MatDialogModule} from "@angular/material/dialog";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -21,7 +23,10 @@ import {FooterComponent} from "../../components/ui-ux/footer/footer.component";
     UiUxRoutingModule,
     MatButtonModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDialogModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class UiUxModule { }

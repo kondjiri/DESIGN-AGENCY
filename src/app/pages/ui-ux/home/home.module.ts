@@ -6,18 +6,29 @@ import { HomeComponent } from './home.component';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {IvyCarouselModule} from "angular-responsive-carousel";
+import {SignInComponent} from "../../../components/ui-ux/sign-in/sign-in.component";
+import {SignUpComponent} from "../../../components/ui-ux/sign-up/sign-up.component";
+import {MatDialogModule} from "@angular/material/dialog";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MatButtonModule,
     MatIconModule,
-    IvyCarouselModule
+    MatDialogModule,
+    MatInputModule,
+    IvyCarouselModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

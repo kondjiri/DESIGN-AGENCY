@@ -14,7 +14,7 @@
                   <a class="mx-3 rounded-4 button-86 main-btn btn-lg text-white border-0 px-3 py-1" mat-stroked-button style="font-size: medium" routerLink="/">About us</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/mobile.png');background-position: center;background-repeat: no-repeat;background-size: contain">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/collab.svg');background-position: center;background-repeat: no-repeat;background-size: contain">
 
             </div>
         </div>
@@ -51,18 +51,16 @@
         </h1>
       </div>
       <div class="row container-fluid p-0 mx-0 my-5">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-2" *ngFor="let i of [1,2,3,4]">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-2" *ngFor="let service of jobs">
           <div class="container-fluid p-3 d-flex items-choose justify-content-center align-items-center flex-column">
               <div>
-                <img src="assets/icons/infos.png" style="width: 100px;height: auto" alt="">
+                <mat-icon>{{service._icon}}</mat-icon>
               </div>
               <h3 class="text-white p-0 m-0" style="font-weight: 600;">
-                Innovation Idea
+                {{service.title}}
               </h3>
               <p class="text-muted text-center">
-                Check why it is worthing choosing us
-                Check why it is worthing choosing us
-                Check why it is worthing choosing us
+                {{service.description}}
               </p>
           </div>
         </div>
@@ -76,7 +74,7 @@
   <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center">
       <div class="row container-fluid p-0 m-0">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/mobile_03.png');background-position: center;background-repeat: no-repeat;background-size: contain;">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/connected.svg');background-position: center;background-repeat: no-repeat;background-size: contain;">
 
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
@@ -102,7 +100,7 @@
 <div class="container-fluid p-0 m-0 bg-image bg-image">
   <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center bg-light-drop">
-      <div class="row container-fluid p-0 m-0">
+      <div class="row container-fluid py-2 m-0">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
           <h1 class="text-white" style="font-weight: 600;">
             The Integration of <br> Technology and Design
@@ -119,7 +117,7 @@
             <a class="rounded-4 main-btn button-86 btn-lg bg-overlay text-white mt-3 border-0 px-3 py-1" mat-stroked-button style="font-size: medium" routerLink="/">Templates</a>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/mobile.png');background-position: center;background-repeat: no-repeat;background-size: contain;">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/chatting.svg');background-position: center;background-repeat: no-repeat;background-size: contain;">
 
         </div>
       </div>
@@ -132,7 +130,7 @@
   <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center">
       <div class="row container-fluid p-0 m-0">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/mobile_02.png');background-position: center;background-repeat: no-repeat;background-size: contain;">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/connecting_teams.svg');background-position: center;background-repeat: no-repeat;background-size: contain;">
 
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">

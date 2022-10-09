@@ -1,0 +1,28 @@
+<h2 mat-dialog-title class="text-center text-white">LOGIN</h2>
+<form [formGroup]="editForm" (ngSubmit)="login()">
+  <mat-dialog-content class="mat-typography py-4">
+      <mat-form-field class="container-fluid" appearance="outline">
+        <mat-label>
+          <mat-icon matPrefix>mail</mat-icon>
+          <span class="mx-1">Email</span>
+        </mat-label>
+        <input matInput type="email" id="email" class="text-white" formControlName="email" name="email">
+      </mat-form-field>
+      <mat-form-field class="container-fluid" appearance="outline">
+        <mat-label>
+          <mat-icon matPrefix>lock</mat-icon>
+          <span class="mx-1">Password</span>
+        </mat-label>
+        <input matInput [type]="!hide?'password':'text'" id="password" class="text-white" formControlName="password" name="password">
+        <button mat-icon-button type="button" matSuffix (click)="hide=!hide" class="text-white">
+          <mat-icon>{{hide?'visibility':'visibility_off'}}</mat-icon>
+        </button>
+      </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions align="start">
+        <div class="container-fluid">
+          <button mat-button mat-dialog-close [mat-dialog-close]="true" style="background-color: rgba(163,97,97,0.25) !important;backdrop-filter: blur(4px);" class="rounded-4 main-btn text-white border-0" type="button" color="warn" (click)="closeDialog()">CANCEL</button>
+          <button [disabled]="editForm.invalid" mat-button  style="background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" class="rounded-4 main-btn text-white border-0" type="submit" color="primary" cdkFocusInitial>VALIDER</button>
+        </div>
+  </mat-dialog-actions>
+</form>

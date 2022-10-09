@@ -53,6 +53,7 @@
                         </mat-menu>
                         <a class="main-btn text-white border-0" mat-menu-item routerLink="/">Pricing</a>
                         <button class="main-btn text-white border-0" color="primary" style="background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-menu-item>Sign up</button>
+                        <button class="main-btn text-white border-0" color="primary" (click)="openConnexionDialog()" style="background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-menu-item>Log in</button>
               </mat-menu>
             </div>
             <div class="desktop">
@@ -97,6 +98,7 @@
                 </mat-menu>-->
                 <a class="mx-3 rounded-4 main-btn text-white border-0" mat-stroked-button routerLink="/">Pricing</a>
                 <button class="rounded-4 main-btn text-white border-0" color="primary" style="margin-left: 20px;background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-stroked-button>Sign up</button>
+                <button (click)="openConnexionDialog()" class="rounded-4 main-btn text-white border-0" color="primary" style="margin-left: 20px;background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-stroked-button>Log In</button>
             </div>
         </div>
     </div>

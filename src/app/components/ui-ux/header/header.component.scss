@@ -7,6 +7,18 @@
       width: 40vh !important;
       box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25) !important;
     }
+    .cdk-global-overlay-wrapper{
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .mat-dialog-container{
+      background-color: rgba(75, 82, 106, 0.4) !important;
+      border-radius: 15px;
+      backdrop-filter: blur(4px);
+      transition: all .3s ease-in-out !important;
+    }
+    .mat-icon {
+      vertical-align: middle;
+    }
 
 }
 

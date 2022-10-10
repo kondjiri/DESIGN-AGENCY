@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialogRef} from "@angular/material/dialog";
+import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 import {FormBuilder, FormControl, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
+import {SignUpComponent} from "../sign-up/sign-up.component";
 
 @Component({
   selector: 'app-sign-in',
@@ -19,6 +20,7 @@ export class SignInComponent implements OnInit {
     public dialogRef: MatDialogRef<SignInComponent>,
     protected fb : FormBuilder,
     private router: Router,
+    protected dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -31,5 +33,18 @@ export class SignInComponent implements OnInit {
   login() : void {
       console.log("------------- LOG IN ------------------");
       console.log(this.editForm.value)
+  }
+
+  openSignUpDialog() {this.closeDialog()
+    const dialogRef = this.dialog.open(SignUpComponent, {
+      width: '35%',
+      data: null,
+      panelClass: ['animate__animated','animate__slideInLeft']
+    });
+
+    dialogRef.afterClosed().subscribe((result: any) => {
+      window.console.log('*************** DIALOG CLOSED **************');
+      window.console.log(result);
+    });
   }
 }

@@ -20,7 +20,7 @@ export class ProductsComponent implements OnInit {
 
   jobs: Service[] = [
     {
-      _icon:'assets/images/mobile01.png',
+      _icon:'assets/images/bg-02.png',
       title:'Innovation Ideas',
       description:'Google Fonts is a Google FontsFontsFontsFonts is a library of 1,405 open source font families and APIs for, library of 1,405 open source font families and APIs for'
     },
@@ -30,32 +30,32 @@ export class ProductsComponent implements OnInit {
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
-      _icon:'assets/icons/html_css_bootstrap.png',
+      _icon:'assets/images/bg-03.png',
       title:'All frontend Technologies',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for, 405 open source font families and APIs for'
     },
     {
-      _icon:'assets/icons/symphony.png',
+      _icon:'assets/images/bg-04.png',
       title:"Teams's Ideas",
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
-      _icon:'assets/icons/laravel.png',
+      _icon:'assets/images/bg-05.png',
       title:'Time to save our time',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
-      _icon:'assets/icons/photoshop.png',
+      _icon:'assets/images/001.png',
       title:'Working remotely',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
-      _icon:'assets/icons/illustrator.png',
+      _icon:'assets/images/002.png',
       title:'Digital Agency',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
-      _icon:'assets/icons/premiere_pro.png',
+      _icon:'assets/images/004.png',
       title:"New Leading Technologies",
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     }

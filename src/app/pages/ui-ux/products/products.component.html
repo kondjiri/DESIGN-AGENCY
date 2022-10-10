@@ -16,22 +16,13 @@
       </div>
       <div class="row container-fluid p-0 mx-0 my-5">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-3" *ngFor="let service of jobs">
-          <div mat-button class="btn container-fluid p-3 d-flex items-choose justify-content-center align-items-center flex-column" style="height: 38vh">
-            <div class="mb-3">
-              <img [src]="service._icon" style="width: auto;height: 180px" alt="">
-            </div>
-            <h3 class="text-white p-0 m-0" style="font-weight: 500;font-size: 22px">
-              {{service.title}}
-            </h3>
-            <p class="text-muted text-center text-justify mt-1" style="font-size: 14px">
-              {{truncate(service.description)}}
-            </p>
-            <div class="container-fluid d-flex justify-content-center align-items-center">
-                <button mat-icon-button placement="bottom" ngbTooltip="Voir" color="primary"><mat-icon class="text-white" style="font-size: medium">visibility</mat-icon></button>
-                <button mat-icon-button placement="bottom" ngbTooltip="Previsualiser" color="primary"><mat-icon class="text-white" style="font-size: medium">preview</mat-icon></button>
-                <button mat-icon-button placement="bottom" ngbTooltip="Télécharger" color="primary"><mat-icon class="text-white" style="font-size: medium">download</mat-icon></button>
-            </div>
-          </div>
+
+          <mat-card class="items-choose btn">
+            <img mat-card-image [src]="service._icon" alt="Photo of a Shiba Inu">
+            <mat-card-header>
+              <mat-card-title class="mb-0"><span class="text-white" style="font-size: medium">{{service.title}}</span></mat-card-title>
+            </mat-card-header>
+          </mat-card>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { ProductsComponent } from './products.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
+    MatCardModule
   ]
 })
 export class ProductsModule { }

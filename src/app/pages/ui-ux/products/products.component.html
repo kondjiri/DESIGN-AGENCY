@@ -1,15 +1,37 @@
-<div class="container-fluid p-0 m-0 bg-image" style="background-image: url('assets/images/bg-03.png');background-position: center right;background-repeat: no-repeat;background-size: contain;">
-  <div class="d-flex justify-content-center align-items-center" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(8px)">
-    <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center pt-5" style="height: 820px">
-      <div class="row container-fluid px-0 pt-5 m-0">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-          <h1 class="text-white text-center" style="font-weight: 600;font-size: 50px;line-height: 80px">
-            {{product ? product : 'Tous les products'}}
-          </h1>
-
+<div class="container-fluid px-0 m-0 bg-image">
+  <div class="d-flex justify-content-center align-items-center py-3" style="background-color: rgba(42,46,59,0.6) !important;min-height: 80vh;backdrop-filter: blur(4px)">
+    <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex flex-column align-items-center" style="margin-top: 20vh;">
+      <div class="col-lg-4 col-md-6 col-sm-10 d-flex align-items-center flex-column">
+        <h1 class="text-white text-center" style="font-weight: 600;font-size: 30px;">
+          Check why it is worthing choosing us {{productName ? productName:''}}
+        </h1>
+        <div class="container-fluid my-4">
+            <div class="d-flex justify-content-center shadow align-items-center rounded-pill px-2" style="background-color: rgba(75, 82, 106, 0.65) !important;backdrop-filter: blur(4px);">
+              <input type="search" placeholder="Recherche" style="height: 45px;letter-spacing: 1px" class="form-control-sm search-product form-control bg-transparent shadow-none ms-1 border-0 text-white"/>
+              <button class="text-white" mat-icon-button>
+                 <mat-icon>search</mat-icon>
+              </button>
+            </div>
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-
+      </div>
+      <div class="row container-fluid p-0 mx-0 my-5">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-3" *ngFor="let service of jobs">
+          <div mat-button class="btn container-fluid p-3 d-flex items-choose justify-content-center align-items-center flex-column" style="height: 38vh">
+            <div class="mb-3">
+              <img [src]="service._icon" style="width: auto;height: 180px" alt="">
+            </div>
+            <h3 class="text-white p-0 m-0" style="font-weight: 500;font-size: 22px">
+              {{service.title}}
+            </h3>
+            <p class="text-muted text-center text-justify mt-1" style="font-size: 14px">
+              {{truncate(service.description)}}
+            </p>
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <button mat-icon-button placement="bottom" ngbTooltip="Voir" color="primary"><mat-icon class="text-white" style="font-size: medium">visibility</mat-icon></button>
+                <button mat-icon-button placement="bottom" ngbTooltip="Previsualiser" color="primary"><mat-icon class="text-white" style="font-size: medium">preview</mat-icon></button>
+                <button mat-icon-button placement="bottom" ngbTooltip="Télécharger" color="primary"><mat-icon class="text-white" style="font-size: medium">download</mat-icon></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

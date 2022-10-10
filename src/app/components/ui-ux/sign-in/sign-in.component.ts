@@ -37,9 +37,8 @@ export class SignInComponent implements OnInit {
 
   openSignUpDialog() {this.closeDialog()
     const dialogRef = this.dialog.open(SignUpComponent, {
-      width: '35%',
+      width: '500px',
       data: null,
-      panelClass: ['animate__animated','animate__slideInLeft']
     });
 
     dialogRef.afterClosed().subscribe((result: any) => {

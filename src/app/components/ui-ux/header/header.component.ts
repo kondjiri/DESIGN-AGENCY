@@ -19,9 +19,8 @@ export class HeaderComponent implements OnInit {
 
   openConnexionDialog() {
     const dialogRef = this.dialog.open(SignInComponent, {
-      width: '35%',
+      width: '500px',
       data: null,
-      panelClass: ['animate__animated','animate__slideInRight']
     });
 
     dialogRef.afterClosed().subscribe((result: any) => {

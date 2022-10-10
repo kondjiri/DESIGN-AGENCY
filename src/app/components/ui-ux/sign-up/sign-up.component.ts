@@ -39,7 +39,7 @@ export class SignUpComponent implements OnInit {
   }
   openConnexionDialog() {this.closeDialog()
     const dialogRef = this.dialog.open(SignInComponent, {
-      width: '35%',
+      width: '500px',
       data: null,
     });
 

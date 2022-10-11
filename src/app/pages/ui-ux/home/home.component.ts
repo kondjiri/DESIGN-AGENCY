@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SignInComponent} from "../../../components/ui-ux/sign-in/sign-in.component";
+import {MatDialog} from "@angular/material/dialog";
 
 
 interface Service{
@@ -75,9 +77,23 @@ export class HomeComponent implements OnInit {
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     }
   ]
-  constructor() { }
+  constructor(
+    protected dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  openConnexionDialog() {
+    const dialogRef = this.dialog.open(SignInComponent, {
+      width: '500px',
+      data: null,
+    });
+
+    dialogRef.afterClosed().subscribe((result: any) => {
+      window.console.log('*************** DIALOG CLOSED **************');
+      window.console.log(result);
+    });
   }
 
 }

@@ -20,6 +20,7 @@ export class ProductsComponent implements OnInit {
   productName!: string
   categoryFilter!: string
   yearFilter!: string
+  typeFilter!: string
 
   jobs: Service[] = [
     {
@@ -87,9 +88,9 @@ export class ProductsComponent implements OnInit {
     });
   }
 
-  truncate(description: string) {
-    if (description.length>150){
-      return description.substring(0,150)+'...'
+  truncate(description: string,nombre: number) {
+    if (description.length>nombre){
+      return description.substring(0,nombre)+'...'
     }
     return description;
   }
@@ -111,5 +112,9 @@ export class ProductsComponent implements OnInit {
 
   onYearSelect(year: string) {
     this.yearFilter = year;
+  }
+
+  onTypeSelect(type: string) {
+    this.typeFilter = type;
   }
 }

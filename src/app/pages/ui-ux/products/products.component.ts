@@ -18,6 +18,8 @@ interface Service{
 export class ProductsComponent implements OnInit {
 
   productName!: string
+  categoryFilter!: string
+  yearFilter!: string
 
   jobs: Service[] = [
     {
@@ -101,5 +103,13 @@ export class ProductsComponent implements OnInit {
     }
 
     return value;
+  }
+
+  onCategorySelect(category: string) {
+      this.categoryFilter = category;
+  }
+
+  onYearSelect(year: string) {
+    this.yearFilter = year;
   }
 }

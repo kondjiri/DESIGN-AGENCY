@@ -16,45 +16,48 @@
       </div>
       <div class="container-fluid my-4 flex-wrap d-flex justify-content-center align-items-center">
           <div class="me-3">
-            <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="produits">Categories <mat-icon>expand_more</mat-icon></button>
+            <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="produits">
+              {{categoryFilter?categoryFilter:'Categories'}} <mat-icon>expand_more</mat-icon></button>
             <mat-menu class="ressources" #produits="matMenu" yPosition="below">
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('Angular JS')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/angular.png" style="width: 25px;margin-right:10px;height: auto" alt="">Angular JS
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('React Js')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/reactjs.png" style="width: 25px;margin-right:10px;height: auto" alt="">React Js
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('HTML & CSS & Bootstrap')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/html_css_bootstrap.png" style="width: 25px;margin-right:10px;height: auto" alt="">HTML & CSS & Bootstrap
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('Symphony')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/symphony.png" style="width: 25px;margin-right:10px;height: auto" alt="">Symphony
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('Laravel PHP')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Laravel PHP
                 </button>
 
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('Photoshop')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/photoshop.png" style="width: 25px;margin-right:10px;height: auto" alt="">Photoshop
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('Illustrator')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/illustrator.png" style="width: 25px;margin-right:10px;height: auto" alt="">Illustrator
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('Premiere Pro')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/premiere_pro.png" style="width: 25px;margin-right:10px;height: auto" alt="">Premiere Pro
                 </button>
-                <button mat-menu-item class="text-white main-btn">
+                <button (click)="onCategorySelect('After Effect')" mat-menu-item class="text-white main-btn">
                   <img src="assets/icons/after_effect.png" style="width: 25px;margin-right:10px;height: auto" alt="">After Effect
                 </button>
             </mat-menu>
           </div>
         <div class="me-3">
-          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="year">Années <mat-icon>expand_more</mat-icon></button>
+          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="year">
+            {{yearFilter ?yearFilter:'Années'}}
+            <mat-icon>expand_more</mat-icon></button>
           <mat-menu class="ressources" #year="matMenu" yPosition="below">
-              <button mat-menu-item class="text-white main-btn">2020</button>
-              <button mat-menu-item class="text-white main-btn">2021</button>
-              <button mat-menu-item class="text-white main-btn">2022</button>
-              <button mat-menu-item class="text-white main-btn">2023</button>
+              <button mat-menu-item (click)="onYearSelect('2020')" class="text-white main-btn">2020</button>
+              <button mat-menu-item (click)="onYearSelect('2021')" class="text-white main-btn">2021</button>
+              <button mat-menu-item (click)="onYearSelect('2022')" class="text-white main-btn">2022</button>
+              <button mat-menu-item (click)="onYearSelect('2023')" class="text-white main-btn">2023</button>
           </mat-menu>
         </div>
         <div class="me-3">

@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 
 interface Service{
   _icon:string,
+  _src:string,
   title:string
   description:string
 }
@@ -21,41 +22,49 @@ export class ProductsComponent implements OnInit {
   jobs: Service[] = [
     {
       _icon:'assets/images/bg-02.png',
+      _src:'assets/icons/angular.png',
       title:'Innovation Ideas',
       description:'Google Fonts is a Google FontsFontsFontsFonts is a library of 1,405 open source font families and APIs for, library of 1,405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/bg-01.png',
+      _src:'assets/icons/reactjs.png',
       title:'Easy Integrations',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/bg-03.png',
+      _src:'assets/icons/AgimMo_logo.png',
       title:'All frontend Technologies',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for, 405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/bg-04.png',
+      _src:'assets/icons/illustrator.png',
       title:"Teams's Ideas",
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/bg-05.png',
+      _src:'assets/icons/laravel.png',
       title:'Time to save our time',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/001.png',
+      _src:'assets/icons/photoshop.png',
       title:'Working remotely',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/002.png',
+      _src:'assets/icons/premiere_pro.png',
       title:'Digital Agency',
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     },
     {
       _icon:'assets/images/004.png',
+      _src:'assets/icons/symphony.png',
       title:"New Leading Technologies",
       description:'Google Fonts is a library of 1,405 open source font families and APIs for'
     }

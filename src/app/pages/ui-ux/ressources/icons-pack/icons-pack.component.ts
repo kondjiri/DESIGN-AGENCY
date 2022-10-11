@@ -1,0 +1,124 @@
+import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+
+interface Service{
+  _icon:string,
+  _src:string,
+  title:string
+  description:string
+}
+
+
+@Component({
+  selector: 'app-icons-pack',
+  templateUrl: './icons-pack.component.html',
+  styleUrls: ['./icons-pack.component.scss']
+})
+export class IconsPackComponent implements OnInit {
+
+  productName!: string
+  categoryFilter!: string
+  yearFilter!: string
+  typeFilter!: string
+  service!: Service;
+
+  jobs: Service[] = [
+    {
+      _icon:'assets/images/bg-02.png',
+      _src:'assets/icons/angular.png',
+      title:'Innovation Ideas',
+      description:'Google Fonts is a Google FontsFontsFontsFonts is a library of 1,405 open source font families and APIs for, library of 1,405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/bg-01.png',
+      _src:'assets/icons/reactjs.png',
+      title:'Easy Integrations',
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/bg-03.png',
+      _src:'assets/icons/AgimMo_logo.png',
+      title:'All frontend Technologies',
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for, 405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/bg-04.png',
+      _src:'assets/icons/illustrator.png',
+      title:"Teams's Ideas",
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/bg-05.png',
+      _src:'assets/icons/laravel.png',
+      title:'Time to save our time',
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/001.png',
+      _src:'assets/icons/photoshop.png',
+      title:'Working remotely',
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/002.png',
+      _src:'assets/icons/premiere_pro.png',
+      title:'Digital Agency',
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for'
+    },
+    {
+      _icon:'assets/images/004.png',
+      _src:'assets/icons/symphony.png',
+      title:"New Leading Technologies",
+      description:'Google Fonts is a library of 1,405 open source font families and APIs for'
+    }
+  ]
+
+  constructor(
+    private router : ActivatedRoute,
+
+  ) { }
+
+  ngOnInit(): void {
+    this.router.params.subscribe(params => {
+      this.productName = params['product'];
+      if (this.productName){
+        console.log("------ PRODUCT --------")
+        console.log(this.productName)
+      }
+    });
+  }
+
+  truncate(description: string,nombre: number) {
+    if (description.length>nombre){
+      return description.substring(0,nombre)+'...'
+    }
+    return description;
+  }
+
+  compareWith(obj1: Object, obj2 : Object) : boolean {
+    return  true
+  }
+  formatLabel(value: number) {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'k';
+    }
+
+    return value;
+  }
+
+  onCategorySelect(category: string) {
+    this.categoryFilter = category;
+  }
+
+  onYearSelect(year: string) {
+    this.yearFilter = year;
+  }
+
+  onTypeSelect(type: string) {
+    this.typeFilter = type;
+  }
+
+  openPreviewIcons(service: Service) {
+    this.service = service;
+  }
+}

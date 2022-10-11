@@ -1,0 +1,101 @@
+<div class="container-fluid px-0 m-0 bg-image">
+  <div class="d-flex justify-content-center align-items-center py-3" style="background-color: rgba(42,46,59,0.6) !important;min-height: 80vh;backdrop-filter: blur(4px)">
+    <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex flex-column align-items-center" style="margin-top: 20vh;">
+      <div class="col-lg-4 col-md-6 col-sm-10 d-flex align-items-center flex-column">
+        <h1 class="text-white text-center" style="font-weight: 600;font-size: 30px;">
+          Icons pack
+        </h1>
+        <div class="container-fluid my-4">
+          <div class="d-flex justify-content-center shadow align-items-center rounded-pill px-2" style="background-color: rgba(75, 82, 106, 0.65) !important;backdrop-filter: blur(4px);">
+            <input type="search" placeholder="Recherche" style="height: 45px;letter-spacing: 1px" class="form-control-sm search-product form-control bg-transparent shadow-none ms-1 border-0 text-white"/>
+            <button class="text-white" mat-icon-button>
+              <mat-icon>search</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid my-4 flex-wrap d-flex justify-content-center align-items-center">
+        <div class="me-3">
+          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="produits">
+            {{categoryFilter?categoryFilter:'Categories'}} <mat-icon>expand_more</mat-icon></button>
+          <mat-menu class="ressources" #produits="matMenu" yPosition="below">
+            <button (click)="onCategorySelect('Angular JS')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/angular.png" style="width: 25px;margin-right:10px;height: auto" alt="">Angular JS
+            </button>
+            <button (click)="onCategorySelect('React Js')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/reactjs.png" style="width: 25px;margin-right:10px;height: auto" alt="">React Js
+            </button>
+            <button (click)="onCategorySelect('HTML & CSS & Bootstrap')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/html_css_bootstrap.png" style="width: 25px;margin-right:10px;height: auto" alt="">HTML & CSS & Bootstrap
+            </button>
+            <button (click)="onCategorySelect('Symphony')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/symphony.png" style="width: 25px;margin-right:10px;height: auto" alt="">Symphony
+            </button>
+            <button (click)="onCategorySelect('Laravel PHP')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Laravel PHP
+            </button>
+
+            <button (click)="onCategorySelect('Photoshop')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/photoshop.png" style="width: 25px;margin-right:10px;height: auto" alt="">Photoshop
+            </button>
+            <button (click)="onCategorySelect('Illustrator')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/illustrator.png" style="width: 25px;margin-right:10px;height: auto" alt="">Illustrator
+            </button>
+            <button (click)="onCategorySelect('Premiere Pro')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/premiere_pro.png" style="width: 25px;margin-right:10px;height: auto" alt="">Premiere Pro
+            </button>
+            <button (click)="onCategorySelect('After Effect')" mat-menu-item class="text-white main-btn">
+              <img src="assets/icons/after_effect.png" style="width: 25px;margin-right:10px;height: auto" alt="">After Effect
+            </button>
+          </mat-menu>
+        </div>
+        <div class="me-3">
+          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="year">
+            {{yearFilter ?yearFilter:'Années'}}
+            <mat-icon>expand_more</mat-icon></button>
+          <mat-menu class="ressources" #year="matMenu" yPosition="below">
+            <button mat-menu-item (click)="onYearSelect('2020')" class="text-white main-btn">2020</button>
+            <button mat-menu-item (click)="onYearSelect('2021')" class="text-white main-btn">2021</button>
+            <button mat-menu-item (click)="onYearSelect('2022')" class="text-white main-btn">2022</button>
+            <button mat-menu-item (click)="onYearSelect('2023')" class="text-white main-btn">2023</button>
+          </mat-menu>
+        </div>
+        <div class="me-3">
+          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="type">
+            {{typeFilter?typeFilter:'Type'}}
+            <mat-icon>expand_more</mat-icon></button>
+          <mat-menu class="ressources" #type="matMenu" yPosition="below">
+            <button mat-menu-item (click)="onTypeSelect('STANDARD')" class="text-white main-btn">STANDARD</button>
+            <button mat-menu-item (click)="onTypeSelect('PRO')" class="text-white main-btn">PRO</button>
+            <button mat-menu-item (click)="onTypeSelect('PRENIUM')" class="text-white main-btn">PRENIUM</button>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="container-fluid d-flex justify-content-center align-items-center flex-wrap p-0 mx-0 my-5" style="background-color: rgba(75, 82, 106, 0.03)">
+        <div class="my-3 mx-2" *ngFor="let icons of jobs">
+
+          <mat-card [ngStyle]="{'background-color':service===icons?'rgba(75, 82, 106, 0.5)':null}" (click)="openPreviewIcons(icons)" class="items-choose shadow-none btn">
+            <img [src]="icons._src" style="width: 30px;height: auto" alt="">
+          </mat-card>
+        </div>
+      </div>
+
+      <div>
+        <button class="rounded-4 main-btn text-white border-0" color="primary" style="margin-left: 20px;background-color: rgba(75, 82, 106, 0.3) !important;backdrop-filter: blur(4px);" mat-stroked-button>
+          PLUS
+          <mat-icon>expand_more</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div  class="position-fixed w-100 d-flex justify-content-center align-items-center" [ngStyle]="{'bottom':service?'40px':'-80px','transition':service?'bottom .3s ease-in-out':null}" style="z-index: 1100;">
+  <div class="rounded-4 shadow d-flex align-items-center justify-content-center px-3"  style="min-width: 20vh;height: 45px;background-color: rgba(255,255,255,0.25);backdrop-filter: blur(5px)" >
+    <span *ngIf="service" class="ms-2"><img [src]="service._src" style="width: 30px;height: auto" alt=""></span>
+    <h4 *ngIf="service" class="text-white my-2 ms-2 py-1 px-3 rounded-pill" style="background-color: rgba(0,0,0,0.77);backdrop-filter: blur(5px)">{{service.title.toLowerCase().replace(' ','-')}}</h4>
+    <button mat-icon-button class="ms-4" (click)="openPreviewIcons(undefined)">
+      <mat-icon class="text-danger">close</mat-icon>
+    </button>
+  </div>
+</div>

@@ -47,7 +47,7 @@
                         </mat-menu>
                         <button class="main-btn text-white border-0" mat-menu-item [matMenuTriggerFor]="ressources">Ressources</button>
                         <mat-menu class="ressources" #ressources="matMenu" yPosition="below">
-                          <button mat-menu-item class="text-white main-btn">
+                          <button mat-menu-item routerLink="/ressources/icons" class="text-white main-btn">
                             <img src="assets/icons/infos.png" style="width: 30px;height: auto" alt="">Icons
                           </button>
                           <button mat-menu-item class="text-white main-btn">
@@ -57,7 +57,7 @@
                             <img src="assets/icons/infos.png" style="width: 30px;height: auto" alt="">Learing
                           </button>
                         </mat-menu>
-                        <a class="main-btn text-white border-0" mat-menu-item routerLink="/">Pricing</a>
+<!--                        <a class="main-btn text-white border-0" mat-menu-item routerLink="/">Pricing</a>-->
                         <button class="main-btn text-white border-0" color="primary" (click)="openConnexionDialog()" style="background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-menu-item>Log in</button>
               </mat-menu>
             </div>
@@ -65,7 +65,7 @@
                 <a class="mx-3 rounded-4 main-btn text-white border-0" mat-stroked-button routerLink="/">Home</a>
                 <button class="rounded-4 main-btn text-white border-0" mat-stroked-button [matMenuTriggerFor]="produits">Products <mat-icon>expand_more</mat-icon></button>
                 <button class="rounded-4 main-btn text-white border-0" mat-stroked-button [matMenuTriggerFor]="ressources">Ressources <mat-icon>expand_more</mat-icon></button>
-                <a class="mx-3 rounded-4 main-btn text-white border-0" mat-stroked-button routerLink="/">Pricing</a>
+<!--                <a class="mx-3 rounded-4 main-btn text-white border-0" mat-stroked-button routerLink="/">Pricing</a>-->
                 <button (click)="openConnexionDialog()" class="rounded-4 main-btn text-white border-0" color="primary" style="margin-left: 20px;background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" mat-stroked-button>Log In</button>
             </div>
         </div>

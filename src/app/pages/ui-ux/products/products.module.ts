@@ -8,6 +8,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatCardModule} from "@angular/material/card";
 import {MatMenuModule} from "@angular/material/menu";
+import {MatSelectModule} from "@angular/material/select";
+import {NgxMatSelectSearchModule} from "ngx-mat-select-search";
+import {MatSliderModule} from "@angular/material/slider";
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import {MatMenuModule} from "@angular/material/menu";
     MatButtonModule,
     MatTooltipModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule,
+    NgxMatSelectSearchModule,
+    MatSliderModule
   ]
 })
 export class ProductsModule { }

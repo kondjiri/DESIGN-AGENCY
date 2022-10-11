@@ -91,4 +91,15 @@ export class ProductsComponent implements OnInit {
     }
     return description;
   }
+
+  compareWith(obj1: Object, obj2 : Object) : boolean {
+    return  true
+  }
+  formatLabel(value: number) {
+    if (value >= 1000) {
+      return Math.round(value / 1000) + 'k';
+    }
+
+    return value;
+  }
 }

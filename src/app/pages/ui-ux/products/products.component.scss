@@ -1,3 +1,33 @@
+
+::ng-deep{
+  .mat-form-field-appearance-outline .mat-form-field-outline{
+    background-color: #383e54 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .mat-option-text{
+    color: white !important;
+  }
+  .mat-option .mat-option-ripple {
+    background-color: rgba(56, 62, 84, 0.86) !important;
+    color: white !important;
+  }
+  .mat-option{
+    color: white !important;;
+  }
+  .mat-select-search-inner{
+    //background-color: rgba(56, 62, 84, 0.86) !important;
+    color: white !important;
+  }
+  .mat-slider-horizontal {
+    height: 38px !important;
+  }
+  .mat-slider {
+    padding:0px 0px !important;
+  }
+}
+
+
 .rounded-4{
   border-radius: 10px !important;
 }

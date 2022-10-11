@@ -14,6 +14,58 @@
             </div>
         </div>
       </div>
+      <div class="container-fluid my-4 flex-wrap d-flex justify-content-center align-items-center">
+          <div class="me-3">
+            <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="produits">Categories <mat-icon>expand_more</mat-icon></button>
+            <mat-menu class="ressources" #produits="matMenu" yPosition="below">
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/angular.png" style="width: 25px;margin-right:10px;height: auto" alt="">Angular JS
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/reactjs.png" style="width: 25px;margin-right:10px;height: auto" alt="">React Js
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/html_css_bootstrap.png" style="width: 25px;margin-right:10px;height: auto" alt="">HTML & CSS & Bootstrap
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/symphony.png" style="width: 25px;margin-right:10px;height: auto" alt="">Symphony
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/laravel.png" style="width: 25px;margin-right:10px;height: auto" alt="">Laravel PHP
+                </button>
+
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/photoshop.png" style="width: 25px;margin-right:10px;height: auto" alt="">Photoshop
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/illustrator.png" style="width: 25px;margin-right:10px;height: auto" alt="">Illustrator
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/premiere_pro.png" style="width: 25px;margin-right:10px;height: auto" alt="">Premiere Pro
+                </button>
+                <button mat-menu-item class="text-white main-btn">
+                  <img src="assets/icons/after_effect.png" style="width: 25px;margin-right:10px;height: auto" alt="">After Effect
+                </button>
+            </mat-menu>
+          </div>
+        <div class="me-3">
+          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="year">Années <mat-icon>expand_more</mat-icon></button>
+          <mat-menu class="ressources" #year="matMenu" yPosition="below">
+              <button mat-menu-item class="text-white main-btn">2020</button>
+              <button mat-menu-item class="text-white main-btn">2021</button>
+              <button mat-menu-item class="text-white main-btn">2022</button>
+              <button mat-menu-item class="text-white main-btn">2023</button>
+          </mat-menu>
+        </div>
+        <div class="me-3">
+          <button class="rounded-4 main-btn text-white border-0" style="background-color: rgba(75, 82, 106, 0.35) !important;backdrop-filter: blur(4px);" mat-stroked-button [matMenuTriggerFor]="type">Type <mat-icon>expand_more</mat-icon></button>
+          <mat-menu class="ressources" #type="matMenu" yPosition="below">
+            <button mat-menu-item class="text-white main-btn">STANDARD</button>
+            <button mat-menu-item class="text-white main-btn">PRO</button>
+            <button mat-menu-item class="text-white main-btn">PRENIUM</button>
+          </mat-menu>
+        </div>
+      </div>
       <div class="row container-fluid p-0 mx-0 my-5">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-3" *ngFor="let service of jobs">
 

@@ -72,9 +72,9 @@
         </div>
       </div>
       <div class="row container-fluid p-0 mx-0 my-5">
-        <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-3" *ngFor="let service of jobs">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-3" *ngFor="let service of jobs;let i=index">
 
-          <mat-card class="items-choose btn">
+          <mat-card [routerLink]="['/products/detail', i, 'view']" class="items-choose btn">
             <img mat-card-image [src]="service._icon" [alt]="service.title">
             <mat-card-header>
               <img [src]="service._src" style="height: 25px;width: auto" mat-card-avatar alt="">

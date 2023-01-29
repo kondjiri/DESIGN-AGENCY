@@ -1,4 +1,4 @@
-<h2 mat-dialog-title class="text-center text-white">NOUVEAU COMPTE</h2>
+<h2 mat-dialog-title class="text-center text-dark">NOUVEAU COMPTE</h2>
 <form [formGroup]="editForm" (ngSubmit)="login()">
   <mat-dialog-content class="mat-typography py-4">
     <div class="container-fluid">
@@ -8,14 +8,14 @@
               <mat-icon matPrefix>person</mat-icon>
               <span class="mx-1">Nom</span>
             </mat-label>
-            <input matInput type="text" id="nom" class="text-white text-uppercase" formControlName="nom" name="nom">
+            <input matInput type="text" id="nom" class="text-dark text-uppercase" formControlName="nom" name="nom">
           </mat-form-field>
           <mat-form-field class="col-md-6" appearance="outline">
             <mat-label>
               <mat-icon matPrefix>person</mat-icon>
               <span class="mx-1">Prenom</span>
             </mat-label>
-            <input matInput type="prenom" id="prenom" class="text-white text-capitalize" formControlName="prenom" name="prenom">
+            <input matInput type="prenom" id="prenom" class="text-dark text-capitalize" formControlName="prenom" name="prenom">
           </mat-form-field>
         </div>
     </div>
@@ -24,14 +24,14 @@
         <mat-icon matPrefix>mail</mat-icon>
         <span class="mx-1">Email</span>
       </mat-label>
-      <input matInput type="email" id="email" class="text-white" formControlName="email" name="email">
+      <input matInput type="email" id="email" class="text-dark" formControlName="email" name="email">
     </mat-form-field>
     <mat-form-field class="container-fluid" appearance="outline">
       <mat-label>
         <mat-icon matPrefix>lock</mat-icon>
         <span class="mx-1">Mot de passe</span>
       </mat-label>
-      <input matInput [type]="!hide?'password':'text'" id="password" class="text-white" formControlName="password" name="password">
+      <input matInput [type]="!hide?'password':'text'" id="password" class="text-dark" formControlName="password" name="password">
       <button mat-icon-button type="button" matSuffix (click)="hide=!hide" class="text-white">
         <mat-icon>{{hide?'visibility':'visibility_off'}}</mat-icon>
       </button>
@@ -44,13 +44,13 @@
       <input matInput [type]="!hide?'password':'text'" id="confirmerpassword" class="text-white" formControlName="confirmerpassword" name="confirmerpassword">
     </mat-form-field>
     <div class="d-flex justify-content-end container-fluid">
-      <button class="rounded-4 text-white border-0" style="margin-leftppp: 20px;" (click)="openConnexionDialog()" mat-stroked-button>Se connecter ?</button>
+      <button class="rounded-4 text-dark border-0" style="margin-leftppp: 20px;" (click)="openConnexionDialog()" mat-stroked-button>Se connecter ?</button>
     </div>
   </mat-dialog-content>
   <mat-dialog-actions align="start">
     <div class="container-fluid">
-      <button mat-button mat-dialog-close [mat-dialog-close]="true" style="background-color: rgba(163,97,97,0.25) !important;backdrop-filter: blur(4px);" class="rounded-4 main-btn text-white border-0" type="button" color="warn" (click)="closeDialog()">CANCEL</button>
-      <button [disabled]="editForm.invalid" mat-button  style="background-color: rgba(75, 82, 106, 0.4) !important;backdrop-filter: blur(4px);" class="rounded-4 main-btn text-white border-0" type="submit" color="primary" cdkFocusInitial>ENREGISTRER</button>
+      <button mat-button mat-dialog-close [mat-dialog-close]="true" style="background-color: rgb(255,0,0) !important;backdrop-filter: blur(4px);" class="rounded-4 main-btn text-white border-0" type="button" color="warn" (click)="closeDialog()">CANCEL</button>
+      <button [disabled]="editForm.invalid" mat-button style="background-color: rgba(0,0,0,1) !important;backdrop-filter: blur(4px);" class="rounded-4 main-btn text-white border-0" type="submit" color="primary" cdkFocusInitial>ENREGISTRER</button>
     </div>
   </mat-dialog-actions>
 </form>

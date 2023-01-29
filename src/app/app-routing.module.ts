@@ -9,7 +9,7 @@ import {AppComponent} from "./app.component";
 const routes: Routes = [
   {
     path:'',
-    loadChildren: () => import('./pages/ui-ux/ui-ux.module').then(m=>m.UiUxModule)
+    loadChildren: () => import('./pages/ui-ux/ui-ux.module').then(m=>m.UiUxModule),
   },
   {
     path:'authentification',

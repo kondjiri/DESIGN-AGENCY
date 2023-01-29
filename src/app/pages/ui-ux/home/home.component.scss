@@ -13,7 +13,7 @@ div,h1,h2,h4,h3,h5,h6,button,a{
 }
 
 .bg-overlay{
-  background-color: rgba(75, 82, 106, 0.4) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .shadow-design {
@@ -26,9 +26,9 @@ div,h1,h2,h4,h3,h5,h6,button,a{
 .bg{
   background-color: #621dd3 !important;
 }
-.bg-image{
+/*.bg-image{
   background-color: #383e54 !important;
-}
+}*/
 .card{
   transition: all .3s ease-in-out !important;
 }
@@ -38,7 +38,7 @@ div,h1,h2,h4,h3,h5,h6,button,a{
   transition: all .3s ease-in-out !important;
 }
 .bg-light-drop{
-  background-color: rgba(75, 82, 106, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
   border-radius: 30px;
   backdrop-filter: blur(4px);
   transition: all .3s ease-in-out !important;
@@ -54,7 +54,7 @@ div,h1,h2,h4,h3,h5,h6,button,a{
   transition: transform .3s ease-in-out;
 }
 .items-choose{
-  background-color: rgba(75, 82, 106, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
   border-radius: 25px !important;
   transition: all .3s ease-in-out;
 }
@@ -109,7 +109,7 @@ div,h1,h2,h4,h3,h5,h6,button,a{
   transform: translate(10px, 10px);
   width: 35px;
   height: 35px;
-  background: rgba(255, 255, 255, 0.21);
+  background: rgba(113, 113, 113, 0.21);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;

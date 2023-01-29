@@ -1,10 +1,10 @@
 <!--Welcome side-->
-<div class="container-fluid p-0 m-0 bg-image" style="background-image: url('assets/images/bg-03.png');background-position: center right;background-repeat: no-repeat;background-size: contain;">
-  <div class="d-flex justify-content-center align-items-center" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(8px)">
+<div class="container-fluid p-0 m-0 bg-image" style="background-image: url('assets/icons/faaro-logo-whit.png');background-position: center right;background-repeat: no-repeat;background-size: contain;">
+  <div class="d-flex justify-content-center align-items-center">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center" style="height: 820px">
         <div class="row container-fluid p-0 m-0">
             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                <h1 class="text-white" style="font-weight: 600;font-size: 70px;line-height: 80px">
+                <h1 class="text-dark" style="font-weight: 600;font-size: 70px;line-height: 80px;font-family: Montserrat,sans-serif !important;">
                   We know how <br>
                   to keep your <br>
                   finances in check <br>
@@ -14,7 +14,7 @@
                   <a class="mx-3 rounded-4 button-86 main-btn btn-lg text-white border-0 px-3 py-1" (click)="openConnexionDialog()" mat-stroked-button style="font-size: medium">SE CONNECTER</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/collab.svg');background-position: center;background-repeat: no-repeat;background-size: contain">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/icons/faaro-logo.png');background-position: center;background-repeat: no-repeat;background-size: contain">
 
             </div>
         </div>
@@ -24,10 +24,10 @@
 
 <!--Partenaires-->
 <div class="container-fluid p-0 m-0 bg-image">
-  <div class="d-flex justify-content-center align-items-center py-3" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
+  <div class="d-flex justify-content-center align-items-center py-3">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex flex-column align-items-center">
       <div class="">
-        <h1 class="text-white text-center" style="font-weight: 600;font-size: 30px;max-width: 400px">
+        <h1 class="text-dark text-center" style="font-weight: 600;font-size: 30px;max-width: 400px">
           Nos partenaires
         </h1>
       </div>
@@ -43,23 +43,23 @@
 </div>
 <!--Reason we're here-->
 <div class="container-fluid p-0 m-0 bg-image">
-  <div class="d-flex justify-content-center align-items-center py-3" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
+  <div class="d-flex justify-content-center align-items-center py-3">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex flex-column align-items-center">
       <div class="">
-        <h1 class="text-white text-center" style="font-weight: 600;font-size: 30px;max-width: 400px">
+        <h1 class="text-dark text-center" style="font-weight: 600;font-size: 30px;max-width: 400px">
           Check why it is worthing choosing us
         </h1>
       </div>
       <div class="row container-fluid p-0 mx-0 my-5">
         <div class="col-lg-3 col-md-6 col-sm-6 col-12 my-2" *ngFor="let service of jobs">
-          <div class="container-fluid p-3 d-flex items-choose justify-content-center align-items-center flex-column">
+          <div class="container-fluid p-3 d-flex items-choose shadow-sm justify-content-center align-items-center flex-column">
               <div class="mb-3">
-                <mat-icon style="font-size: xx-large" class="text-white">{{service._icon}}</mat-icon>
+                <mat-icon style="font-size: xx-large" class="text-dark">{{service._icon}}</mat-icon>
               </div>
-              <h3 class="text-white p-0 m-0" style="font-weight: 600;">
+              <h3 class="text-dark p-0 m-0" style="font-weight: 600;">
                 {{service.title}}
               </h3>
-              <p class="text-muted text-center">
+              <p class="text-secondary text-center">
                 {{service.description}}
               </p>
           </div>
@@ -70,18 +70,18 @@
 </div>
 
 <!--Welcome side 01-->
-<div class="container-fluid p-0 m-0 bg-image"  style="background-image: url('assets/images/bg-04.png');background-position: center left;background-repeat: no-repeat;background-size: contain;">
-  <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
+<div class="container-fluid p-0 m-0 bg-image">
+  <div class="d-flex justify-content-center align-items-center py-4">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center">
       <div class="row container-fluid p-0 m-0">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/connected.svg');background-position: center;background-repeat: no-repeat;background-size: contain;">
 
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
-          <h1 class="text-white" style="font-weight: 600;">
+          <h1 class="text-dark" style="font-weight: 600;">
             We know how to keep your <br> finances in check
           </h1>
-          <p class="text-muted">
+          <p class="text-secondary">
             Google Fonts is a library of 1,405 open source font families and APIs for
             convenient use via CSS and Android. The library also has delightful and beautifully
             crafted icons for common actions and items. Download them for use in your digital
@@ -98,18 +98,18 @@
 
 <!--Welcome side 02-->
 <div class="container-fluid p-0 m-0 bg-image bg-image">
-  <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
-    <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center bg-light-drop">
+  <div class="d-flex justify-content-center align-items-center py-4">
+    <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center shadow-sm align-items-center bg-light-drop">
       <div class="row container-fluid py-2 m-0">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
-          <h1 class="text-white" style="font-weight: 600;">
+          <h1 class="text-dark" style="font-weight: 600;">
             The Integration of <br> Technology and Design
           </h1>
-          <p class="text-muted">
+          <p class="text-secondary">
             Google Fonts is a library of 1,405 open source font families and APIs for
             convenient use via CSS and Android. The library also has delightful and beautifully
           </p>
-          <div class="d-flex align-items-center my-2 text-white items-integrations" *ngFor="let i of [1,2,3]">
+          <div class="d-flex align-items-center my-2 text-dark items-integrations" *ngFor="let i of [1,2,3]">
             <button mat-icon-button class="bg-overlay d-flex justify-content-center align-items-center" disabled style="width: 25px;height: 25px"><mat-icon class="text-white" style="font-size: medium">check</mat-icon> </button>
             <span class="mx-3">Most Secure one  from E2E</span>
           </div>
@@ -126,22 +126,22 @@
 </div>
 
 <!--Welcome side 03-->
-<div class="container-fluid p-0 m-0 bg-image" style="background-image: url('assets/images/bg-03.png');background-position: center left;background-repeat: no-repeat;background-size: contain;">
-  <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
+<div class="container-fluid p-0 m-0 bg-image">
+  <div class="d-flex justify-content-center align-items-center py-4">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center">
       <div class="row container-fluid p-0 m-0">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="min-height:400px;background-image: url('assets/images/connecting_teams.svg');background-position: center;background-repeat: no-repeat;background-size: contain;">
 
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
-          <h1 class="text-white" style="font-weight: 600;">
+          <h1 class="text-dark" style="font-weight: 600;">
             Adaptability of design View
           </h1>
-          <p class="text-muted">
+          <p class="text-secondary">
             Google Fonts is a library of 1,405 open source font families and APIs for
             convenient use via CSS and Android. The library also has delightful and beautifully
           </p>
-          <div class="d-flex align-items-center my-2 text-white items-integrations" *ngFor="let i of [1,2,3]">
+          <div class="d-flex align-items-center my-2 text-dark items-integrations" *ngFor="let i of [1,2,3]">
             <button mat-icon-button class="bg-overlay d-flex justify-content-center align-items-center" disabled style="width: 25px;height: 25px"><mat-icon class="text-white" style="font-size: medium">check</mat-icon> </button>
             <span class="mx-3">Most Secure one  from E2E</span>
           </div>
@@ -155,11 +155,11 @@
 </div>
 
 <!--Welcome side 04-->
-<div class="container-fluid p-0 m-0 bg-image" style="background-image: url('assets/images/bg-04.png');background-position: center;background-repeat: repeat-x;background-size: contain;">
-  <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
+<div class="container-fluid p-0 m-0 bg-image">
+  <div class="d-flex justify-content-center align-items-center py-4">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-column">
       <div class="mb-4">
-        <h1 class="text-white text-center" style="font-weight: 600;font-size: 30px;max-width: 400px">
+        <h1 class="text-dark text-center" style="font-weight: 600;font-size: 30px;max-width: 400px">
           Check why it is worthing choosing us
         </h1>
       </div>
@@ -167,8 +167,8 @@
         <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex flex-column" style="min-height: 300px">
               <div class="d-flex rounded bg-overlay card shadow p-3 mb-3 justify-content-end flex-column" *ngFor="let service of services1">
                   <button class="text-white bg-overlay" mat-icon-button><mat-icon>{{service._icon}}</mat-icon></button>
-                  <h2 class="text-white m-0">{{service.title}}</h2>
-                  <p class="text-muted">
+                  <h2 class="text-dark m-0">{{service.title}}</h2>
+                  <p class="text-secondary">
                     {{service.description}}
                   </p>
               </div>
@@ -178,9 +178,9 @@
         </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
               <div class="d-flex rounded bg-overlay card shadow p-3 mb-3 justify-content-end flex-column" *ngFor="let service of services2">
-                <button class="text-white bg-overlay" mat-icon-button><mat-icon>{{service._icon}}</mat-icon></button>
-                <h2 class="text-white m-0">{{service.title}}</h2>
-                <p class="text-muted">
+                <button class="text-dark bg-overlay" mat-icon-button><mat-icon>{{service._icon}}</mat-icon></button>
+                <h2 class="text-dark m-0">{{service.title}}</h2>
+                <p class="text-secondary">
                   {{service.description}}
                 </p>
             </div>
@@ -192,14 +192,14 @@
 
 <!--Welcome side 05-->
 <div class="container-fluid p-0 m-0 bg-image">
-  <div class="d-flex justify-content-center align-items-center py-4" style="background-color: rgba(42,46,59,0.6) !important;backdrop-filter: blur(4px)">
+  <div class="d-flex justify-content-center align-items-center py-4">
     <div class="col-lg-10 col-md-11 col-sm-12 col-12 d-flex justify-content-center align-items-center">
       <div class="row container-fluid p-0 m-0">
         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center flex-column" style="min-height: 300px">
-          <h1 class="text-white" style="font-weight: 600;">
+          <h1 class="text-dark" style="font-weight: 600;">
             The Integration of <br> Technology and Design
           </h1>
-          <p class="text-muted">
+          <p class="text-secondary">
             Google Fonts is a library of 1,405 open source font families and APIs for
             convenient use via CSS and Android. The library also has delightful and beautifully
             crafted icons for common actions and items. Download them for use in your digital
